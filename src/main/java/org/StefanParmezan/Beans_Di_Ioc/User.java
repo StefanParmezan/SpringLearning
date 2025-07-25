@@ -1,4 +1,4 @@
-package org.StefanParmezan.Practice1;
+package org.StefanParmezan.Beans_Di_Ioc;
 
 //@Component
 public class User {
