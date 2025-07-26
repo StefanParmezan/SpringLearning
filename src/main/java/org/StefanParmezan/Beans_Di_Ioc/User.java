@@ -1,14 +1,14 @@
 package org.StefanParmezan.Beans_Di_Ioc;
 
 //@Component
-public class User {
+class User {
     private final String name;
 
-    public User() {
+    User() {
         this.name = "User";
     }
 
-    public String getName() {
+    String getName() {
         return name;
     }
 

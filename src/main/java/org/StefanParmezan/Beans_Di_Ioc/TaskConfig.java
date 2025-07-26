@@ -4,19 +4,19 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class TaskConfig {
+class TaskConfig {
     @Bean
-    public Task task(){
+     Task task(){
         return new Task();
     }
 
     @Bean
-    public User user(){
+    User user(){
         return new User();
     }
 
     @Bean
-    public TaskService taskService(Task task,  User user){
+    TaskService taskService(Task task,  User user){
         return new TaskService(task, user);
     }
 }

@@ -1,13 +1,13 @@
 package org.StefanParmezan.Beans_Di_Ioc;
 
 //@Component
-public class TaskService {
+class TaskService {
 
     private final Task task;
     private final User user;
 
     //@Autowired
-    public TaskService(Task task, User user) {
+    TaskService(Task task, User user) {
         this.task = task;
         this.user = user;
     }

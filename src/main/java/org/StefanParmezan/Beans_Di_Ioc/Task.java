@@ -2,7 +2,7 @@ package org.StefanParmezan.Beans_Di_Ioc;
 
 
 //@Component
-public class Task {
+class Task {
     private final String taskname;
     private final Integer tasktime;
 
