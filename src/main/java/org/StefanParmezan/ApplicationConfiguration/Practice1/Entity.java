@@ -1,4 +1,4 @@
-package org.StefanParmezan.ApplicationConfiguration;
+package org.StefanParmezan.ApplicationConfiguration.Practice1;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
