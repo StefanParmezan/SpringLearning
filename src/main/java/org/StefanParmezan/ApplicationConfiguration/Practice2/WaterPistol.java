@@ -1,6 +1,6 @@
 package org.StefanParmezan.ApplicationConfiguration.Practice2;
 
-public class WaterPistol implements Gun{
+public class WaterPistol implements Weapon {
     int damage = 1;
 
     public WaterPistol(){}

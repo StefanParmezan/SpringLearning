@@ -7,14 +7,21 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope
 public class Enemy {
-    Gun gun;
+    Weapon weapon;
 
     @Autowired
-    public Enemy(Gun gun){
-        this.gun = gun;
+    public Enemy(Weapon weapon){
+        this.weapon = weapon;
     }
 
-    public Gun getGun(){
-        return this.gun;
+    public Weapon getWeapon(){
+        return this.weapon;
+    }
+
+    @Override
+    public String toString() {
+        return "Enemy{" +
+                "weapon=" + weapon +
+                '}';
     }
 }

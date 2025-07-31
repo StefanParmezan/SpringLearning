@@ -1,5 +1,5 @@
 package org.StefanParmezan.ApplicationConfiguration.Practice2;
 
-interface Gun {
+interface Weapon {
     int getDamage();
 }

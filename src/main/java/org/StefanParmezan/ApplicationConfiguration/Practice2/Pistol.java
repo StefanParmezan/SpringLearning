@@ -3,7 +3,7 @@ package org.StefanParmezan.ApplicationConfiguration.Practice2;
 import org.springframework.stereotype.Component;
 
 @Component
-class Pistol implements Gun{
+class Pistol implements Weapon {
     int damage = 5;
 
     public int getDamage() {
