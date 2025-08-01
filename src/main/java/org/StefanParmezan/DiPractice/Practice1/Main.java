@@ -1,4 +1,4 @@
-package org.StefanParmezan.DiPractice;
+package org.StefanParmezan.DiPractice.Practice1;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

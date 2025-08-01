@@ -1,9 +1,7 @@
-package org.StefanParmezan.Practice;
+package org.StefanParmezan.DiPractice.Practice2;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import java.io.ObjectInputFilter;
 
 class Main {
     public static void main(String[] args) {

@@ -1,15 +1,16 @@
-package org.StefanParmezan.DiPractice;
+package org.StefanParmezan.DiPractice.Practice1;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
 @Scope("prototype")
-class Lada implements Car {
+class Mitsubishi implements Car {
     private final String name;
     private final Integer speed;
     private final Integer price;
-    public Lada(String name, Integer speed, Integer price) {
+
+    public Mitsubishi(String name, Integer speed, Integer price) {
         this.speed = speed;
         this.price = price;
         this.name = name;
@@ -32,6 +33,6 @@ class Lada implements Car {
 
     @Override
     public void Drive() {
-        System.out.println("Lada " + this.getName() + " is driving" + " with speed " + this.getSpeed());
+        System.out.println("Mitsubishi " + this.getName() + " is driving" + " with speed " + this.speed);
     }
 }

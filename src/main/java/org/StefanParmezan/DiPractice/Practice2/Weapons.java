@@ -1,12 +1,4 @@
-package org.StefanParmezan.Practice;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Scope;
-import org.springframework.stereotype.Component;
-import org.StefanParmezan.Practice.Main;
-
-import java.io.Serializable;
-import java.util.function.Supplier;
+package org.StefanParmezan.DiPractice.Practice2;
 
 public enum Weapons {
     BAZOOKA(15),

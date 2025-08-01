@@ -1,4 +1,4 @@
-package org.StefanParmezan.Practice;
+package org.StefanParmezan.DiPractice.Practice2;
 
 @FunctionalInterface
 interface Weapon {
