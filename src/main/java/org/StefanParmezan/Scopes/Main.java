@@ -6,7 +6,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 class Main {
     public static void main(String[] args) {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
-        HelloService helloService = context.getBean(HelloService.class);
-        helloService.sayHello("Dima");
+        UserService userService = context.getBean(UserService.class);
+        User user = context.getBean(User.class, "Dima");
+        userService.sayHello(user);
+        User user2 = context.getBean(User.class, "Anton");
+        userService.sayHello(user2);
     }
 }

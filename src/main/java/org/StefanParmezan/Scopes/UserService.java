@@ -5,8 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Scope("singleton")
-public class HelloService {
-    public void sayHello(String name) {
-        System.out.println("Hello from " + name);
+public class UserService {
+    public void sayHello(User user) {
+        System.out.println("Hello from " + user.getName());
     }
 }
