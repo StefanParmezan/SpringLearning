@@ -1,4 +1,4 @@
-package org.StefanParmezan.ApplicationConfiguration.Practice2;
+package org.StefanParmezan.ApplicationConfiguration.ValueAnnotation;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

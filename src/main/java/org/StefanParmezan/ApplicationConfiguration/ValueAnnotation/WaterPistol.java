@@ -1,4 +1,4 @@
-package org.StefanParmezan.ApplicationConfiguration.Practice2;
+package org.StefanParmezan.ApplicationConfiguration.ValueAnnotation;
 
 public class WaterPistol implements Weapon {
     int damage = 1;

@@ -1,4 +1,4 @@
-package org.StefanParmezan.ApplicationConfiguration.Practice2;
+package org.StefanParmezan.ApplicationConfiguration.ValueAnnotation;
 
 public class TestEnemy extends Enemy{
 

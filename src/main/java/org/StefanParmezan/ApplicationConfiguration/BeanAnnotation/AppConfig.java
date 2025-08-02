@@ -1,4 +1,4 @@
-package org.StefanParmezan.ApplicationConfiguration.Practice1;
+package org.StefanParmezan.ApplicationConfiguration.BeanAnnotation;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
