@@ -11,5 +11,8 @@ class Main {
         userService.sayHello(user);
         User user2 = context.getBean(User.class, "Anton");
         userService.sayHello(user2);
+        UserService userService2 = context.getBean(UserService.class);
+        System.out.println(user == user2);
+        System.out.println(userService2 == userService);
     }
 }
