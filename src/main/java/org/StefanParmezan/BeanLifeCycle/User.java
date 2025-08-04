@@ -1,5 +1,6 @@
 package org.StefanParmezan.BeanLifeCycle;
 
+import jakarta.annotation.PostConstruct;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -15,5 +16,10 @@ public class User {
 
     public String getName() {
         return name;
+    }
+
+    @PostConstruct
+    public void init(){
+        System.out.println("User init");
     }
 }
