@@ -22,4 +22,8 @@ public class User {
     public void init(){
         System.out.println("User init");
     }
+
+
+    public void destroy(){
+    }
 }
