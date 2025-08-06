@@ -1,6 +1,7 @@
 package org.StefanParmezan.BeanLifeCycle;
 
 import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -23,7 +24,8 @@ public class User {
         System.out.println("User init");
     }
 
-
+    @PreDestroy
     public void destroy(){
+        System.out.println("User destroy");
     }
 }
