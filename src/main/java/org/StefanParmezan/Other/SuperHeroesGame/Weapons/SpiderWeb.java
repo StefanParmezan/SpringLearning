@@ -11,10 +11,5 @@ public class SpiderWeb implements Weapon {
         return this.damage;
     }
 
-    @Override
-    public Weapon getWeapon() {
-        return null;
-    }
-
 
 }
