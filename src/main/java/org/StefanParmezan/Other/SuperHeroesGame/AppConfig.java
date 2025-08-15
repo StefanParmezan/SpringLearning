@@ -30,7 +30,7 @@ public class AppConfig {
 
     @Bean
     public SpiderMan spiderMan() {
-        return new SpiderMan();
+        return new SpiderMan(new SpiderWeb());
     }
 
     @Bean
@@ -40,11 +40,11 @@ public class AppConfig {
 
     @Bean
     public BatMan batman() {
-        return new BatMan();
+        return new BatMan(new Batrung());
     }
 
     @Bean
     public DeadPool deadPool() {
-        return new DeadPool();
+        return new DeadPool(new Pistol(), new Knife());
     }
 }

@@ -9,8 +9,13 @@ import org.StefanParmezan.Other.SuperHeroesGame.Weapons.Knife;
 import org.StefanParmezan.Other.SuperHeroesGame.Weapons.Pistol;
 
 public class DeadPool implements Hero {
-    Weapon weapon1 = Main.getContext().getBean(Knife.class);
-    Weapon weapon2 = Main.getContext().getBean(Pistol.class);
+    Weapon weapon1;
+    Weapon weapon2;
+
+    public DeadPool(Pistol weapon1, Knife weapon2) {
+        this.weapon1 = weapon1;
+        this.weapon2 = weapon2;
+    }
 
     @Override
     public Weapon getWeapon() {

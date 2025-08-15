@@ -9,7 +9,11 @@ import org.StefanParmezan.Other.SuperHeroesGame.Weapons.SpiderWeb;
 
 public class SpiderMan implements Hero {
 
-    Weapon weapon = Main.getContext().getBean(SpiderWeb.class);
+    Weapon weapon;
+
+    public SpiderMan(SpiderWeb weapon) {
+        this.weapon = weapon;
+    }
 
     @Override
     public Weapon getWeapon() {

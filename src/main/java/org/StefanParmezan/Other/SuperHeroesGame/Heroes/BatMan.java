@@ -6,10 +6,15 @@ import org.StefanParmezan.Other.SuperHeroesGame.Main;
 import org.StefanParmezan.Other.SuperHeroesGame.Repositories.Hero;
 import org.StefanParmezan.Other.SuperHeroesGame.Repositories.Weapon;
 import org.StefanParmezan.Other.SuperHeroesGame.Weapons.Batrung;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 public class BatMan implements Hero {
+    Weapon weapon;
 
-    Weapon weapon =  Main.getContext().getBean(Batrung.class);
+    public BatMan(Batrung weapon) {
+        this.weapon = weapon;
+    }
 
     @Override
     public Weapon getWeapon() {
