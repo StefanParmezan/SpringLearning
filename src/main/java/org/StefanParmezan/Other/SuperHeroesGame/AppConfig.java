@@ -1,6 +1,7 @@
 package org.StefanParmezan.Other.SuperHeroesGame;
 
-import org.StefanParmezan.Other.SuperHeroesGame.Heroes.Batman;
+import org.StefanParmezan.Other.SuperHeroesGame.Heroes.BatMan;
+import org.StefanParmezan.Other.SuperHeroesGame.Heroes.DeadPool;
 import org.StefanParmezan.Other.SuperHeroesGame.Heroes.SpiderMan;
 import org.StefanParmezan.Other.SuperHeroesGame.Weapons.Batrung;
 import org.StefanParmezan.Other.SuperHeroesGame.Weapons.Knife;
@@ -38,7 +39,12 @@ public class AppConfig {
     }
 
     @Bean
-    public Batman batman() {
-        return new Batman();
+    public BatMan batman() {
+        return new BatMan();
+    }
+
+    @Bean
+    public DeadPool deadPool() {
+        return new DeadPool();
     }
 }
