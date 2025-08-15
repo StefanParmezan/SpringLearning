@@ -4,7 +4,7 @@ import org.StefanParmezan.Other.SuperHeroesGame.Repositories.Effect;
 
 public class Slowness implements Effect {
     @Override
-    public String getEffect() {
+    public String getEffectName() {
         return "Slowness";
     }
 }

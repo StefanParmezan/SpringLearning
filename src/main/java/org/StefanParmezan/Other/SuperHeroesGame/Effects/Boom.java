@@ -4,7 +4,7 @@ import org.StefanParmezan.Other.SuperHeroesGame.Repositories.Effect;
 
 public class Boom implements Effect {
     @Override
-    public String getEffect() {
+    public String getEffectName() {
         return "Boom";
     }
 }
