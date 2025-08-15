@@ -3,11 +3,11 @@ package org.StefanParmezan.Other.SuperHeroesGame.Heroes;
 import org.StefanParmezan.Other.SuperHeroesGame.Main;
 import org.StefanParmezan.Other.SuperHeroesGame.Repositories.Hero;
 import org.StefanParmezan.Other.SuperHeroesGame.Repositories.Weapon;
-import org.StefanParmezan.Other.SuperHeroesGame.Weapons.SpiderWeb;
+import org.StefanParmezan.Other.SuperHeroesGame.Weapons.Batrung;
 
-public class SpiderMan implements Hero {
+public class Batman implements Hero {
 
-    Weapon weapon = Main.getContext().getBean(SpiderWeb.class);
+    Weapon weapon =  Main.getContext().getBean(Batrung.class);
 
     @Override
     public Weapon getWeapon() {
@@ -16,6 +16,6 @@ public class SpiderMan implements Hero {
 
     @Override
     public String getName() {
-        return "SpiderMan";
+        return "Batman";
     }
 }

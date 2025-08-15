@@ -9,4 +9,8 @@ public class Main {
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         System.out.println(context.getBean(SpiderMan.class).getName());
     }
+
+    public static ApplicationContext getContext() {
+        return new AnnotationConfigApplicationContext(AppConfig.class);
+    }
 }

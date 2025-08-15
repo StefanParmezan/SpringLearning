@@ -5,7 +5,6 @@ import org.StefanParmezan.Other.SuperHeroesGame.Repositories.Weapon;;
 public class SpiderWeb implements Weapon {
     private int damage = 10;
 
-
     @Override
     public int getDamage() {
         return this.damage;
