@@ -1,5 +1,8 @@
 package org.StefanParmezan.Other.SuperHeroesGame;
 
+import org.StefanParmezan.Other.SuperHeroesGame.Effects.Boom;
+import org.StefanParmezan.Other.SuperHeroesGame.Effects.Null;
+import org.StefanParmezan.Other.SuperHeroesGame.Effects.Slowness;
 import org.StefanParmezan.Other.SuperHeroesGame.Heroes.BatMan;
 import org.StefanParmezan.Other.SuperHeroesGame.Heroes.DeadPool;
 import org.StefanParmezan.Other.SuperHeroesGame.Heroes.SpiderMan;
@@ -12,39 +15,18 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
-
-    @Bean
-    public SpiderWeb spiderWeb() {
-        return new SpiderWeb();
-    }
-
-    @Bean
-    public Knife knife() {
-        return new Knife();
-    }
-
-    @Bean
-    public Pistol pistol(){
-        return new Pistol();
-    }
-
     @Bean
     public SpiderMan spiderMan() {
-        return new SpiderMan(new SpiderWeb());
-    }
-
-    @Bean
-    public Batrung batrung() {
-        return new Batrung();
+        return new SpiderMan(new SpiderWeb(new Slowness()));
     }
 
     @Bean
     public BatMan batman() {
-        return new BatMan(new Batrung());
+        return new BatMan(new Batrung(new Boom()));
     }
 
     @Bean
     public DeadPool deadPool() {
-        return new DeadPool(new Pistol(), new Knife());
+        return new DeadPool(new Pistol(new Null()), new Knife(new Null()));
     }
 }

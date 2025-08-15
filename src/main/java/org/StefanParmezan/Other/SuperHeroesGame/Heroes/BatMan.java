@@ -18,7 +18,7 @@ public class BatMan implements Hero {
 
     @Override
     public Weapon getWeapon() {
-        return this.weapon;
+        return weapon;
     }
 
     @Override

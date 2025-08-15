@@ -12,6 +12,7 @@ public class Main {
         System.out.println(context.getBean(SpiderMan.class).getName());
         System.out.println(context.getBean(BatMan.class).getName());
         System.out.println(context.getBean(DeadPool.class).getName());
+        System.out.println(context.getBean(BatMan.class).getWeapon().getEffect());
     }
 
     public static ApplicationContext getContext() {
