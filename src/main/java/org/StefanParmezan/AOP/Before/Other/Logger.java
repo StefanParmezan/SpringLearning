@@ -1,4 +1,4 @@
-package org.StefanParmezan.AOP.Before;
+package org.StefanParmezan.AOP.Before.Other;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
@@ -9,12 +9,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class Logger {
 
-    @Before("execution(void org.StefanParmezan.AOP.Before.SomeService.doWork())")
+    @Before("execution(void org.StefanParmezan.AOP.Before.Other.SomeService.doWork())")
     public void logBeforeDoWork() {
         System.out.println("Метод doWork начался!");
     }
 
-    @After("execution(void org.StefanParmezan.AOP.Before.SomeService.doWork())")
+    @After("execution(void org.StefanParmezan.AOP.Before.Other.SomeService.doWork())")
     public void logAfterDoWork() {
         System.out.println("Метод doWork закончился!");
     }

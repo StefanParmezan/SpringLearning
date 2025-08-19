@@ -1,4 +1,4 @@
-package org.StefanParmezan.AOP.Before;
+package org.StefanParmezan.AOP.Before.Other;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;

@@ -1,6 +1,5 @@
-package org.StefanParmezan.AOP.Before;
+package org.StefanParmezan.AOP.Before.Other;
 
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 @Service
