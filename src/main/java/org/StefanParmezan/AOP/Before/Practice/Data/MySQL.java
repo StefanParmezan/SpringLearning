@@ -30,7 +30,13 @@ public class MySQL implements Database {
     }
 
     @Override
-    public User getUser(User user) {
-        return users.get(user.getUsername());
+    public User getUser(String username, int password) {
+        if(users.get(username).getPassword() == password){
+            return users.get(username);
+        }
+
+        else{
+            throw new RuntimeException("Wrong password");
+        }
     }
 }

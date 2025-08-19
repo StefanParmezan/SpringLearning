@@ -2,7 +2,9 @@ package org.StefanParmezan.AOP.Before.Practice.Models;
 
 import org.StefanParmezan.AOP.Before.Practice.Repositories.Database;
 import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
+@Component
 @Scope("prototype")
 public class User {
     private String username;
