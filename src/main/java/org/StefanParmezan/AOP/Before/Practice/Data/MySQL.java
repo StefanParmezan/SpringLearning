@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import java.util.HashMap;
 import java.util.Map;
 
-@Service
 @Repository
 public class MySQL implements Database {
     private final Map<String, User> users = new HashMap<>();

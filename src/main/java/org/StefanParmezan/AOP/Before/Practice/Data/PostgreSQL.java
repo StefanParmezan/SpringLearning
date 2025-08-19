@@ -7,15 +7,17 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.CompletableFuture;
 
-@Service
 @Repository
 public class PostgreSQL implements Database {
     private final Map<String, User> users = new HashMap<>();
 
     @Override
     public void saveUser(User user) {
-        new Thread(() -> users.put(user.getUsername(), user)).ofVirtual();
+        CompletableFuture.runAsync(() -> {
+            users.put(user.getUsername(), user);
+        });
     }
 
     @Override
