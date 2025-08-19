@@ -7,11 +7,13 @@ import org.StefanParmezan.AOP.Before.Practice.Repositories.Database;
 import org.StefanParmezan.AOP.Before.Practice.Services.RegistrationService;
 import org.StefanParmezan.AOP.Before.Practice.Services.UserService;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @Configuration
 @EnableAspectJAutoProxy
+@ComponentScan("org.StefanParmezan.AOP.Before.Practice")
 public class AppConfig {
 
     @Bean

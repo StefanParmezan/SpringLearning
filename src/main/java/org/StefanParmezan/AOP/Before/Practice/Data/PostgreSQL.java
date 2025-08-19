@@ -15,7 +15,7 @@ public class PostgreSQL implements Database {
 
     @Override
     public void saveUser(User user) {
-        users.put(user.getUsername(), user);
+        new Thread(() -> users.put(user.getUsername(), user)).ofVirtual();
     }
 
     @Override
@@ -29,7 +29,7 @@ public class PostgreSQL implements Database {
     }
 
     @Override
-    public User getUser(String username, int password) {
+    public User getUser(String username, int password) throws  RuntimeException{
         if(users.get(username).getPassword() == password){
             return users.get(username);
         }

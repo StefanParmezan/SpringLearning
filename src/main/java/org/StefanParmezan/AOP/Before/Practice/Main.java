@@ -11,10 +11,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     static ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AppConfig.class);
     public static void main(String[] args) {
-        applicationContext.getBean(RegistrationService.class).register("StefanParmezan", 1234);
+        RegistrationService registrationService = applicationContext.getBean(RegistrationService.class);
         UserService userService = applicationContext.getBean(UserService.class);
-        User user = userService.getUser("StefanParmezan", 1234);
-        System.out.println(user.getUsername());
+        registrationService.register("StefanParmezan", 12);
+        User user1 = userService.getUser("StefanParmezan", 12);
+        registrationService.register("Dima", 123);
+        User user2 = userService.getUser("Dima", 12);
+        System.out.println(user1.getUsername());
     }
 
     public static ApplicationContext getContext(){

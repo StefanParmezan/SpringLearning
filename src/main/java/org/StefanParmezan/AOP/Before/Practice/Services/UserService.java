@@ -15,7 +15,7 @@ public class UserService {
         this.database = database;
     }
 
-    public void save(User user){
+    public void save(User user) throws RuntimeException{
         database.saveUser(user);
     }
 

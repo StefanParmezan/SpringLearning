@@ -8,8 +8,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class RegistrationService {
-    public void register(String username, int password){
+    public void register(String username, int password) throws RuntimeException{
         User user = new User(username, password);
-        Main.getContext().getBean(UserService.class).save(user);
+        try {
+            Main.getContext().getBean(UserService.class).save(user);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }
