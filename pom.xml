@@ -7,6 +7,10 @@
     <groupId>org.StefanParmezan</groupId>
     <artifactId>SpringLearning</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+    </build>
 
     <properties>
         <maven.compiler.source>24</maven.compiler.source>
