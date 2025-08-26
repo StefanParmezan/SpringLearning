@@ -10,9 +10,5 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@Configuration
-@ComponentScan("org.StefanParmezan.JpaLearning")
-@EnableJpaRepositories("org.StefanParmezan.JpaLearning.repositories")
-@EntityScan("org.StefanParmezan.JpaLearning.models")
 public class AppConfig {
 }
