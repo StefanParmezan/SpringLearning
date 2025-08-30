@@ -1,4 +1,3 @@
-// org/StefanParmezan/JpaLearning/model/User.java
 package org.StefanParmezan.JpaLearning.models;
 
 import jakarta.persistence.*;

@@ -2,6 +2,7 @@ package org.StefanParmezan.Scopes;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.StefanParmezan.Scopes.AppConfig;
 
 class Main {
     public static void main(String[] args) {

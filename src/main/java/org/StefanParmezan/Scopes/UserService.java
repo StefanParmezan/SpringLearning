@@ -2,6 +2,7 @@ package org.StefanParmezan.Scopes;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import org.StefanParmezan.Scopes.User;
 
 @Component
 @Scope("singleton")
